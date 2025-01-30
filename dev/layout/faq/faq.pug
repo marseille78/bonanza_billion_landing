@@ -1,0 +1,13 @@
+mixin faq(data)
+    // START .faq
+    +b.SECTION.faq
+        .container
+            +e.H2.title FAQ
+
+            +e.UL.list
+                each item in dataFaq.dataList
+                    +e.LI.item
+                        +e.H3.subtitle= item.title
+
+                        +e.DIV.text= item.text
+    // END .faq

@@ -1,0 +1,44 @@
+{
+    "dataList": [
+        {
+            "img": "features-1.png",
+            "title": "Symbols pay",
+            "text": "Anywhere on the screen. The total number of the same symbol on the screen at the end of a spin determines the value of the win."
+        },
+        {
+            "img": "features-2.png",
+            "title": "Refiling",
+            "text": "A brand new feature. Now the cascading reels can give you many consecutive wins on every spin"
+        },
+        {
+            "img": "features-3.png",
+            "title": "Free Spins",
+            "text": "Feature is awarded when 4 or more Scatter symbols hit anywhere on the screen or a Free Spins round has been purchased."
+        },
+        {
+            "img": "features-4.png",
+            "title": "Multiplier symbol",
+            "text": "Present on the reels only during the Free Spins Round and it stays on the screen until the end of the refiling sequence. Whenever the symbol hits it takes a random multiplier value from 2x to 100x. "
+        },
+        {
+            "img": "features-5.png",
+            "title": "Scatter symbol",
+            "text": "Present on all reels. Scatter pays on any position in the main game. During the Free Spins Round they only re-trigger Free Spins."
+        },
+        {
+            "img": "features-6.png",
+            "title": "Buy Bonus",
+            "text": "A player can buy a Free Spin game during the main game at a price pictured on the buy button. If Buy Bonus is purchased, the next spin guarantees a bonus game with 4+ Scatters appearing on the reels."
+        },
+        {
+            "img": "features-7.png",
+            "title": "Chance 2x feature",
+            "text": "This feature slightly increases the bet while giving the player more chances in the main game to catch 4+ scatters and trigger a Free Spin game."
+        },
+        {
+            "img": "features-8.png",
+            "title": "Refiling",
+            "text": "Means that after every spin, all combinations are paid and all winning symbols disappear.The remaining symbols fall to the bottom of the screen and the empty positions are replaced with symbols coming from above."
+        }
+    ]
+}

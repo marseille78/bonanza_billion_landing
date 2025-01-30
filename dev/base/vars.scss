@@ -1,0 +1,51 @@
+// COLORS
+$c_bgBody: #fff;
+$c_text: #000;
+$c_brand: #ffe151;
+$c_link: tomato;
+// $c_accent: #F95109;
+$c_navyBlue: #1A47B8;
+$c_gold: linear-gradient(to bottom,  #ffec04 0%,#ffb900 100%);
+$c_yellow: #FFDA2C;
+$c_white: #FFFFFF;
+$c_redWine: #AF010D;
+$c_limeGreen: #00B731;
+$c_golden: #D4AF2C;
+$c_blue: #3ECBF8;
+$c_gray: #CBCBCB;
+$c_purple: #955DCC;
+$c_green: #249F58;
+$c_red: #F93939;
+$c_black: #151515;
+$c_orange: #FF6C2D;
+$c_skyBlue: #3A99FF;
+$c_darkBlue: #232C80;
+$c_turquoise: #03BCDB;
+$c_brown: #AE6A3E;
+$c_darkGreen: #0A6A30;
+
+// Font-family
+$ff_base: "Inter", sans-serif;
+$ff_second: "Coiny", system-ui;
+$ff_third: "Roboto", sans-serif;
+$fz_base: 16px;
+$lh: 1.3;
+
+// Brakepoints
+$xs: "480px";
+$sm: "576px";
+$md: "768px";
+$lg: "992px";
+$xl: "1200px";
+$_xxl: "1459px";
+$xxl: "1460px";
+
+// Other
+$anim: ease-in-out 300ms;
+
+// Placeholders
+%clearList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,48 @@
+/* .btn */
+// @media (min-width: $xs) { /* .btn $xs */ }
+// @media (min-width: $sm) { /* .btn $sm */ }
+// @media (min-width: $md) { /* .btn $md */ }
+// @media (min-width: $lg) { /* .btn $lg */ }
+// @media (min-width: $xl) { /* .btn $xl */ }
+@media (min-width: $xxl) { /* .btn $xxl */ }
+
+.btn {
+    font-family: $ff_second;
+    text-decoration: none;
+    color: $c_white;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    background: radial-gradient(ellipse at center,  #fdf271 0%,#c38700 80%,#f2b506 100%);
+    padding: 32px 38px 22px;
+    border-radius: 100px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 2px 48px 0 #FFC800;
+    text-transform: uppercase;
+    min-width: 304px;
+    text-align: center;
+    
+    @media (min-width: $xxl) {
+        padding: 32px 50px 18px;
+        font-size: 30px;
+        min-width: 360px;
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        right: 9px;
+        bottom: 9px;
+        z-index: 0;
+        border-radius: 100px;
+        pointer-events: none;
+        background: linear-gradient(to bottom,  #c802c6 0%,#77009b 100%);
+    }
+    span {
+        position: relative;
+        z-index: 1;
+    }
+}

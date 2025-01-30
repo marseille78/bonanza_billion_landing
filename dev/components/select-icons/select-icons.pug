@@ -1,0 +1,15 @@
+mixin select-icons(data)
+    // START .select-icons
+    +b.DIV.select-icons(data-icons)
+        +e.DIV.top
+            +e.DIV.current(data-icons-toggle)
+                img(src="img/en.png" alt="icons" data-icons-current)
+                +e.IMG.arrow(src="img/arr-select.svg" width="15" height="10")
+            +e.FORM.form(action="" method="post" id="addtosk")
+                +e.DIV.dinamic#dinamic
+                +e.INPUT.value(type="text" data-icons-value)
+        +e.UL.list.ls-clear(data-icons-list)
+            each item in dataLangs.dataList
+                +e.LI.list-item
+                    +e.IMG.list-item-img(src= `img/${item}.png` alt= item data-icons-item= item)
+    // END .select-icons

@@ -1,0 +1,112 @@
+/* .billion */
+@media (min-width: $xs) { /* .billion $xs */ }
+// @media (min-width: $sm) { /* .billion $sm */ }
+// @media (min-width: $md) { /* .billion $md */ }
+@media (min-width: $lg) { /* .billion $lg */ }
+// @media (min-width: $xl) { /* .billion $xl */ }
+@media (min-width: $xxl) { /* .billion $xxl */ }
+
+.billion {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 227px;
+    
+    @media (min-width: $lg) {
+        padding-top: 80px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -120px;
+        left: 0;
+        width: 100%;
+        height: 146px;
+        background: url("../img/wave-header.png") no-repeat calc(50% - 265px) 50%;
+        background-size: auto 100%;
+        
+        @media (min-width: $xs) {
+            top: -140px;
+        }
+        
+        @media (min-width: $xxl) {
+            background: url("../img/wave-header-lg.png") no-repeat calc(50% + 8px) 50%;
+            height: 624px;
+            top: -378px;
+
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 90px;
+        right: -37px;
+        width: 101px;
+        height: 101px;
+        background: url("../img/el-lemon.png") no-repeat 50% 50%;
+        background-size: contain;
+        z-index: 1;
+        
+        @media (min-width: $xxl) {
+            bottom: auto;
+            top: -209px;
+            right: -140px;
+            width: 342px;
+            height: 342px;
+        }
+    }
+    &__title {
+        margin-bottom: 9px;
+        text-align: center;
+        
+        @media (min-width: $xxl) {
+            margin-bottom: 13px;
+            line-height: 1;
+        }
+    }
+    &__title-img {
+        width: 311px;
+        display: inline-block;
+        
+        @media (min-width: $lg) {
+            width: 700px;
+        }
+
+        @media (min-width: $xxl) {
+            width: 995px;
+        }
+    }
+    &__banner {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 4px;
+        
+        @media (min-width: $xxl) {
+            margin-bottom: 21px;
+        }
+    }
+    &__banner-img {
+        border-radius: 10px;
+        
+        @media (min-width: $lg) {
+            border-radius: 30px;
+        }
+    }
+    &__text {
+        margin-bottom: 33px;
+        padding: 0px 12px;
+        
+        @media (min-width: $xxl) {
+            text-align: center;
+            padding: 0px 100px;
+            margin-bottom: 35px;
+        }
+    }
+    &__btn {
+        text-align: center;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}

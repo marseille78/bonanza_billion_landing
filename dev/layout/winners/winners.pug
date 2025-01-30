@@ -1,0 +1,19 @@
+include ../../components/tbl/tbl
+include ../../components/btn/btn
+
+mixin winners(data)
+    // START .winners
+    +b.SECTION.winners
+        .container
+            +e.H2.title Latest Bonanza winners
+
+            +e.DIV.tbl-block
+                +tbl(dataTable)
+
+            +e.DIV.text
+                | Thank you for being part of our gaming community. We can't wait for you to
+                | experience the magic of Bonanza Billion!
+            
+            +e.DIV.btn
+                +btn({text: "Click to start", tag: "A", href: "!#"})
+    // END .winners

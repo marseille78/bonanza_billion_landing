@@ -1,0 +1,14 @@
+include ../btn/btn
+
+mixin feature(data)
+    - const {img, title, text} = data;
+
+    // START .feature
+    +b.DIV.feature
+        +e.DIV.header
+            +e.DIV.view
+                +e.IMG.img(src= `img/${img}` alt="Feature")
+        +e.DIV.body
+            +e.H3.title= title
+            +e.DIV.text= text
+    // END .feature

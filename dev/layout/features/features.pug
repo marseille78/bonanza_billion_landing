@@ -1,0 +1,16 @@
+include ../../components/feature/feature
+
+mixin features(data)
+    // START .features
+    +b.SECTION.features
+        .container
+            +e.H2.title Features
+
+            +e.DIV.list
+                each item in dataFeatures.dataList
+                    +e.DIV.list-item
+                        +feature(item)
+            
+            +e.DIV.footer
+                +btn({text: "Try now", tag: "A", href: "/"})
+    // END .features

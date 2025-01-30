@@ -1,0 +1,16 @@
+mixin tbl(data)
+    - const {th, tr} = data;
+
+    // START .tbl
+    +b.TABLE.tbl
+        +e.THEAD.thead
+            +e.TR.thead-tr
+                each itemTh in th
+                    +e.TH.th= itemTh
+        
+        +e.TBODY.tbody
+            each itemTr in tr
+                +e.TR.tr
+                    each itemTd in itemTr
+                        +e.TD.td= itemTd
+    // END .tbl

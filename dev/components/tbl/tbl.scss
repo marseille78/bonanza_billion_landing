@@ -1,0 +1,88 @@
+/* .tbl */
+// @media (min-width: $xs) { /* .tbl $xs */ }
+// @media (min-width: $sm) { /* .tbl $sm */ }
+// @media (min-width: $md) { /* .tbl $md */ }
+// @media (min-width: $lg) { /* .tbl $lg */ }
+@media (min-width: $xl) { /* .tbl $xl */ }
+// @media (min-width: $xxl) { /* .tbl $xxl */ }
+
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+
+    // @media (min-width: $xxl) {
+    @media (min-width: $xl) {
+        font-size: 33px;
+    }
+
+    &__th {
+        background: $c_gold;
+        padding: 11px 16px;
+        text-align: center;
+        font-weight: 500;
+        
+        // @media (min-width: $xxl) {
+        @media (min-width: $xl) {
+            padding: 26px 78px;
+        }
+
+        &:first-child {
+            border-radius: 10px 0 0 0;
+            text-align: left;
+            
+            // @media (min-width: $xxl) {
+            @media (min-width: $xl) {
+                border-radius: 30px 0 0 0;
+            }
+        }
+        &:last-child {
+            border-radius: 0 10px 0 0;
+            
+            // @media (min-width: $xxl) {
+            @media (min-width: $xl) {
+                border-radius: 0 30px 0 0;
+            }
+        }
+    }
+    &__td {
+        background-color: #D093D2;
+        color: $c_white;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 9px 16px;
+        text-align: center;
+        white-space: nowrap;
+        
+        // @media (min-width: $xxl) {
+        @media (min-width: $xl) {
+            font-size: 33px;
+            padding: 23px 78px;
+        }
+        
+        &:first-child {
+            text-align: left;
+        }
+        .tbl__tr:nth-child(even) & {
+            background-color: #730084;
+        }
+        .tbl__tr:last-child &:first-child {
+            border-radius: 0 0 0 10px;
+            
+            // @media (min-width: $xxl) {
+            @media (min-width: $xl) {
+                border-radius: 0 0 0 30px;
+            }
+        }
+        .tbl__tr:last-child &:last-child {
+            border-radius: 0 0 10px 0;
+            
+            // @media (min-width: $xxl) {
+            @media (min-width: $xl) {
+                border-radius: 0 0 30px 0;
+            }
+        }
+    }
+}

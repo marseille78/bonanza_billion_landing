@@ -1,0 +1,61 @@
+/* .feature */
+// @media (min-width: $xs) { /* .feature $xs */ }
+// @media (min-width: $sm) { /* .feature $sm */ }
+// @media (min-width: $md) { /* .feature $md */ }
+// @media (min-width: $lg) { /* .feature $lg */ }
+@media (min-width: $xl) { /* .feature $xl */ }
+@media (min-width: $xxl) { /* .feature $xxl */ }
+
+.feature {
+    &__view {
+        background-color: #FFE204;
+        border-radius: 10px;
+        width: 66px;
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @media (min-width: $xxl) {
+            width: 90px;
+            height: 90px;
+        }
+    }
+    &__img {
+        width: 40px;
+        height: auto;
+
+        @media (min-width: $xxl) {
+            width: 68px;
+        }
+    }
+    &__header {
+        margin-bottom: 12px;
+        
+        @media (min-width: $xxl) {
+            margin-bottom: 18px;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        margin-bottom: 0;
+        
+        // @media (min-width: $xxl) {
+        @media (min-width: $xl) {
+            font-size: 30px;
+            line-height: 33px;
+            margin-bottom: 1px;
+        }
+    }
+    &__text {
+        padding-right: 10px;
+        line-height: 1.37;
+        letter-spacing: 0.1px;
+
+        @media (min-width: $xxl) {
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.3px;
+        }
+    }
+}

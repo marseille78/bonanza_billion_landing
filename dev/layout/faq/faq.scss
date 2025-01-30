@@ -1,0 +1,83 @@
+/* .faq */
+// @media (min-width: $xs) { /* .faq $xs */ }
+// @media (min-width: $sm) { /* .faq $sm */ }
+// @media (min-width: $md) { /* .faq $md */ }
+// @media (min-width: $lg) { /* .faq $lg */ }
+@media (min-width: $xl) { /* .faq $xl */ }
+@media (min-width: $xxl) { /* .faq $xxl */ }
+
+.faq {
+    padding-bottom: 116px;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: -119px;
+        right: -82px;
+        width: 177px;
+        height: 177px;
+        background: url("../img/el-watermelon.png") no-repeat 50% 50%;
+        background-size: contain;
+        transform: scale(-1, 1);
+        
+        @media (min-width: $xxl) {
+            width: 500px;
+            height: 500px;
+            top: -179px;
+            right: -260px;
+        }
+    }
+    &__title {
+        margin-bottom: 40px;
+        
+        @media (min-width: $xxl) {
+            margin-bottom: 37px;
+        }
+    }
+    &__list {
+        padding-left: 3px;
+        padding-right: 3px;
+        @extend %clearList;
+    }
+    &__item {
+        padding-bottom: 25px;
+        
+        @media (min-width: $xxl) {
+            padding-bottom: 22px;
+        }
+        
+        &:not(:last-child) {
+            border-bottom: 3px solid #B3B3B3;
+            margin-bottom: 45px;
+            
+            @media (min-width: $xxl) {
+                margin-bottom: 58px;
+            }
+        }
+    }
+    &__subtitle {
+        font-size: 24px;
+        line-height: 1.15;
+        margin-bottom: 7px;
+        font-weight: 400;
+        
+        // @media (min-width: $xxl) {
+        @media (min-width: $xl) {
+            font-size: 54px;
+            line-height: 59px;
+        }
+    }
+    &__text {
+        letter-spacing: 0.1px;
+
+        @media (min-width: $xxl) {
+            letter-spacing: 1.3px;
+        }
+    }
+}

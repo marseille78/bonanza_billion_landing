@@ -1,0 +1,102 @@
+/* .select-icons */
+// @media (min-width: $xs) { /* .select-icons $xs */ }
+// @media (min-width: $sm) { /* .select-icons $sm */ }
+@media (min-width: $md) { /* .select-icons $md */ }
+// @media (min-width: $lg) { /* .select-icons $lg */ }
+// @media (min-width: $xl) { /* .select-icons $xl */ }
+// @media (min-width: $xxl) { /* .select-icons $xxl */ }
+
+.select-icons {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  padding-top: 0;
+  padding-right: 6px;
+
+  &__top {
+    position: relative;
+    z-index: 1;
+  }
+  &__form {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  &__current {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 4px;
+
+    img:first-child {
+      margin-right: 4px;
+      width: 22px;
+
+      // @media (min-width: $xxl) {
+      @media (min-width: $md) {
+        padding-right: 6px;
+        width: 36px;
+      }
+    }
+  }
+  &__arrow {
+    width: 11px;
+    height: auto;
+
+    // @media (min-width: $xxl) {
+    @media (min-width: $md) {
+      width: 16px;
+    }
+  }
+  &__list {
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    pointer-events: none;
+    right: 0;
+    border-radius: 8px;
+    transition: all ease-in-out 300ms 300ms;
+    @extend %clearList;
+
+    .select-icons.opened & {
+      top: 46px;
+      opacity: 1;
+      transition: all ease-in-out 300ms;
+      pointer-events: all;
+      // background-color: rgba(33, 33, 33, 0.8);
+      background-color: rgba(33, 33, 33, 0.3);
+      // background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  &__list-item {
+    padding: 8px 16px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity ease-in-out 300ms;
+
+    .select-icons.opened & {
+      opacity: 1;
+      transition: opacity ease-in-out 300ms 300ms;
+    }
+
+    &:hover {
+      img {
+        box-shadow: 0 0 8px #fff;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__list-item-img {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
+}

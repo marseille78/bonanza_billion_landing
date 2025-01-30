@@ -1,0 +1,148 @@
+/* .header */
+// @media (min-width: $xs) { /* .header $xs */ }
+// @media (min-width: $sm) { /* .header $sm */ }
+@media (min-width: $md) { /* .header $md */ }
+@media (min-width: $lg) { /* .header $lg */ }
+// @media (min-width: $xl) { /* .header $xl */ }
+@media (min-width: $xxl) { /* .header $xxl */ }
+
+.header {
+    min-height: 830px;
+    background: url("../img/header-bg.jpg") no-repeat 50% 0;
+    background-size: cover;
+    font-family: $ff_second;
+    position: relative;
+    
+    // @media (min-width: $xxl) {
+    @media (min-width: $lg) {
+        min-height: 984px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -47px;
+        left: -92px;
+        height: 187px;
+        width: 187px;
+        background: url("../img/el-watermelon.png") no-repeat 50% 50%;
+        background-size: contain;
+        z-index: 1;
+        
+        @media (min-width: $xxl) {
+            height: 500px;
+            width: 500px;
+            bottom: 21px;
+            left: -284px;
+        }
+    }
+
+    &__logo {
+        width: 135px;
+
+        // @media (min-width: $xxl) {
+        @media (min-width: $md) {
+            width: 278px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 41px;
+        margin-bottom: 134px;
+        
+        // @media (min-width: $xxl) {
+        @media (min-width: $xl) {
+            padding-right: 120px;
+            padding-top: 22px;
+            margin-bottom: 71px;
+        }
+    }
+    &__img {
+        margin-bottom: 30px;
+
+        @media (min-width: $xxl) {
+            position: absolute;
+            right: -47px;
+            top: 0;
+            max-width: 50%;
+        }
+    }
+    &__img-inner {
+        height: 177px;
+        width: 317px;
+        max-width: 100%;
+        background: url("../img/top-screenshot.jpg") no-repeat 50% 50%;
+        background-size: cover;
+        margin: 0 auto;
+        border-radius: 10px;
+        
+        @media (min-width: $lg) {
+            width: 634px;
+            height: 354px;
+            border-radius: 30px;
+        }
+        
+        @media (min-width: $xxl) {
+            width: 975px;
+            height: 547px;
+            border-radius: 30px;
+        }
+    }
+    &__text {
+        background-image: $c_gold;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        margin: 0 -14px 54px;
+        
+        @media (min-width: $xxl) {
+            text-align: left;
+            margin: 0 0 24px;
+            font-size: 80px;
+            line-height: 92px;
+        }
+    }
+    &__bottom {
+        position: relative;
+        z-index: 2;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 153px;
+            height: 153px;
+            background: url("../img/el-cherry.png") 50% 50%;
+            background-size: contain;
+            transform: rotate(19deg);
+            right: -76px;
+            top: -76px;
+            
+            @media (min-width: $xxl) {
+                top: -155px;
+                right: -134px;
+                height: 282px;
+                width: 282px;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    &__btn {
+        text-align: center;
+
+        @media (min-width: $xxl) {
+            text-align: left;
+        }
+    }
+    &__body {
+        @media (min-width: $xxl) {
+            padding-right: 682px;
+            padding-top: 142px;
+        }
+    }
+}

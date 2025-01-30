@@ -1,0 +1,33 @@
+include ../../components/btn/btn
+
+mixin play(data)
+    // START .play
+    +b.SECTION.play
+        .container
+            +e.H2.title How to play?
+
+            +e.DIV.body
+                +e.DIV.view
+                    +e.IMG.img(src="img/play.jpg" alt="Play")
+
+                +e.DIV.info
+                    +e.DIV.info-item
+                        +e.H3.subtitle Auto play
+
+                        +e.DIV.text
+                            | Click the Auto spins settings (A) button to choose the number of rounds to auto play.
+                            | Autoplay starts when you click the number of rounds and the Autoplay button shows
+                            | the amount of remaining spins.
+
+                    +e.DIV.info-item
+                        +e.H3.subtitle Rules
+
+                        +e.DIV.text
+                            | Winnings are formed depending on the number of symbols. Сhoose the bet size
+                            | using the buttons in the Total bet field. Higher bets will increase a total win.
+                            | The bet value chosen is displayed in the corresponding field. To start the reels spinning,
+                            | click the Spin button.
+                    
+                    +e.DIV.btn
+                        +btn({text: "Play now", tag: "A", href: "!#"})
+    // END .play

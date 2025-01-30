@@ -1,0 +1,23 @@
+include ../../components/btn/btn
+include ../../components/select-icons/select-icons
+
+mixin header(data)
+    // START .header
+    +b.DIV.header
+        .container
+            +e.DIV.top
+                +e.A.logo(href="/")
+                    img(src="img/logo.png" alt="Logo")
+                
+                +select-icons(dataLangs)
+            
+        +e.DIV.bottom
+            .container
+                +e.DIV.img
+                    +e.DIV.img-inner
+                +e.DIV.body
+                    +e.DIV.text
+                        | Play bonanza and have big win
+                    +e.DIV.btn
+                        +btn({text: "Click to start", tag: "A", href: "!#"})
+    // END .header

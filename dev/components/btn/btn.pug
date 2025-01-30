@@ -1,0 +1,9 @@
+mixin btn(data)
+    - const {text, tag, href} = data;
+
+    // START .btn
+    case tag
+        when "A"
+            +b.A.btn(href= href)
+                span= text
+    // END .btn

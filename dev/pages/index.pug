@@ -1,0 +1,26 @@
+extends ../templates/tpl-base
+
+//- include ../layout/header/header
+include ../layout/header/header
+include ../layout/billion/billion
+include ../layout/winners/winners
+include ../layout/play/play
+include ../layout/features/features
+include ../layout/faq/faq
+include ../layout/footer/footer
+//- include ../components/header/header
+
+block content
+    +header({})
+
+    +billion({})
+
+    +winners({})
+
+    +play({})
+
+    +features({})
+
+    +faq({})
+
+    +footer({})

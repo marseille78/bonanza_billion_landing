@@ -1,0 +1,22 @@
+include ../../components/btn/btn
+
+mixin billion(data)
+    // START .billion
+    +b.SECTION.billion.page__section
+        .container
+            +e.H2.title
+                +e.IMG.title-img(src="img/billion-title.png" alt="Billion title")
+
+            +e.DIV.banner
+                +e.IMG.banner-img(src="img/billion.jpg" alt="Billion")
+            
+            +e.DIV.text
+                | Meet Bonanza Billion - a vibrant fruit fiesta filled with magnificent
+                | winnings that every sweet tooth will love. Exciting gameplay with
+                | refilling-reels mechanics, scatter symbols, free spins with
+                | multipliers, and other great features. Feel this juicy vibe and
+                | take all great winnings!
+
+            +e.DIV.btn
+                +btn({text: "Win now", tag: "A", href: "!#"})
+    // END .billion

@@ -1,0 +1,16 @@
+{
+    "dataList": [
+        {
+            "title": "How winnings are calculated?",
+            "text": "Calculate your winnings by multiplying the current odds with your bets placed."
+        },
+        {
+            "title": "How do I get the winnings?",
+            "text": "Before the plane explodes, quickly collect the winnings from your previous bet. If the plane explodes, all bets placed on that destroyed plane will be void."
+        },
+        {
+            "title": "What is the minimum bid on Bonanza?",
+            "text": "The smallest amount you can bet is 0,10€ and you can bet on one, two or three spaceships. So the maximum bet will be either 0,10€ or 0,30€."
+        }
+    ]
+}
